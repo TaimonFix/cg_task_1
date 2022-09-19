@@ -6,11 +6,11 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         FrameMain gui = new FrameMain();
-        gui.setBackground(Color.BLACK);
+        gui.setBackground(Color.pink);
         frame.add(gui);
         frame.setSize(700, 500);
         frame.setVisible(true);
-
+        frame.setResizable(false);
 
     }
 }
