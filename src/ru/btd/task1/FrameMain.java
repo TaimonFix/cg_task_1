@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 public class FrameMain extends JPanel {
     private int x1 = 50;
     private int y1 = 500;
-    private int x2 = 500;
+    private int x2 = 200;
     private int y2 = 50;
     Color colorR = Color.RED, color1 = Color.CYAN, color2 = Color.RED, color3 = Color.GREEN, color4 = Color.WHITE;
     private boolean flagWight = true;
@@ -30,9 +30,11 @@ public class FrameMain extends JPanel {
         super.paint(g2);
         g2.setBackground(Color.BLACK);
 
+        int h = getHeight(), w = getWidth();
+
         g2.setColor(Color.BLACK);
-        g2.drawLine(0, 250, 700, 250);
-        g2.drawLine(325,0,325,700);
+        g2.drawLine(0, h / 2, w, h / 2);
+        g2.drawLine(w / 2,0,w / 2,h);
 
         g2.setColor(color2);
         g2.fillOval(x1, 500, 75, 50);
